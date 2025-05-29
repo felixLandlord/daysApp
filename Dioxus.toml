@@ -1,0 +1,33 @@
+[application]
+
+name = "days-app"
+
+[web.app]
+
+# HTML title tag content
+title = "days-app"
+
+# include `assets` in web platform
+[web.resource]
+
+# Additional CSS style files
+style = ["assets/styles"]
+
+# Additional JavaScript files
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []
+
+[web.watcher]
+reload_html = true
+watch_path = ["src", "assets"]
+
+[bundle]
+identifier = "com.felix.daysapp"
+publisher = "Felix"
+icon = ["assets/favicon.ico"]
+resources = ["assets/"]          # , "employees.db"

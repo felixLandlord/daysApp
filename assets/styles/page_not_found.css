@@ -1,0 +1,32 @@
+.not-found-container {
+    text-align: center;
+    padding: 48px 24px;
+    background-color: #1e2128;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 48px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.not-found-container h1 {
+    font-size: 3rem;
+    color: #ef4444;
+    margin-bottom: 1rem;
+}
+
+.not-found-container p {
+    color: #94a3b8;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.not-found-container pre {
+    background-color: #2d3239;
+    padding: 16px;
+    border-radius: 8px;
+    color: #ef4444;
+    font-family: monospace;
+    text-align: left;
+    overflow-x: auto;
+    border: 1px solid #3f3f46;
+}

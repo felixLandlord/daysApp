@@ -1,0 +1,8 @@
+.btn.btn-share {
+    background-color: #10b981 !important;
+    color: white !important;
+}
+
+.btn.btn-share:hover:not(:disabled) {
+    background-color: #059669 !important;
+}
