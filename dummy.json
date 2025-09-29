@@ -1,0 +1,378 @@
+[
+  {
+    "name": "Kwame",
+    "sex": "Male",
+    "role": "UI/UX Designer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Jamal",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Ama",
+    "sex": "Female",
+    "role": "Project Manager",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Kojo",
+    "sex": "Male",
+    "role": "AI-LLM Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Yaw",
+    "sex": "Male",
+    "role": "Mobile Engineer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Esi",
+    "sex": "Female",
+    "role": "Human Resource Manager",
+    "required_days": 5,
+    "fixed_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "is_nsp": false
+  },
+  {
+    "name": "Kwaku",
+    "sex": "Male",
+    "role": "QA Engineer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Desmond",
+    "sex": "Male",
+    "role": "Machine Learning Engineer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Ibrahim",
+    "sex": "Male",
+    "role": "Blockchain Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Abena",
+    "sex": "Female",
+    "role": "Project Manager",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Owusu",
+    "sex": "Male",
+    "role": "Machine Learning Engineer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Kelvin",
+    "sex": "Male",
+    "role": "Frontend Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Tetteh",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Naana",
+    "sex": "Female",
+    "role": "Machine Learning Engineer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Kwabena",
+    "sex": "Male",
+    "role": "AI-LLM Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Evans",
+    "sex": "Male",
+    "role": "DevOps Engineer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Patrick",
+    "sex": "Male",
+    "role": "DevOps Engineer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Bright",
+    "sex": "Male",
+    "role": "IT Support",
+    "required_days": 3,
+    "fixed_days": ["Monday", "Wednesday", "Friday"],
+    "is_nsp": false
+  },
+  {
+    "name": "Jonas",
+    "sex": "Male",
+    "role": "AI-LLM Engineer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Selorm",
+    "sex": "Male",
+    "role": "UI/UX Designer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Justice",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Yaw Amponsah",
+    "sex": "Male",
+    "role": "Data Analyst",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Kobby",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 1,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Kwesi",
+    "sex": "Male",
+    "role": "Data Analyst",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Akosua",
+    "sex": "Female",
+    "role": "Machine Learning Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Elorm",
+    "sex": "Male",
+    "role": "DevOps Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Manuel",
+    "sex": "Male",
+    "role": "AI-LLM Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Kofigo",
+    "sex": "Male",
+    "role": "QA Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Yawson",
+    "sex": "Male",
+    "role": "Social Media Marketing",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": false
+  },
+  {
+    "name": "Afia",
+    "sex": "Female",
+    "role": "Machine Learning Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Daniel",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Kwesi Appiah",
+    "sex": "Male",
+    "role": "UI/UX Designer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Nana Kofi",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Yaw Danso",
+    "sex": "Male",
+    "role": "Machine Learning Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Kwame Dei",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Obed",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Mariam",
+    "sex": "Female",
+    "role": "Data Scientist",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Juliet",
+    "sex": "Female",
+    "role": "Data Scientist",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Kofi Mensah",
+    "sex": "Male",
+    "role": "AI-LLM Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Serwaa",
+    "sex": "Female",
+    "role": "Project Manager",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Kwesi Nii",
+    "sex": "Male",
+    "role": "Frontend Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Kwame Nii",
+    "sex": "Male",
+    "role": "UI/UX Designer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Yaw Nkrumah",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Kwesi Ofori",
+    "sex": "Male",
+    "role": "Data Scientist",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Yaw Kennedy",
+    "sex": "Male",
+    "role": "AI-LLM Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Hawa",
+    "sex": "Female",
+    "role": "Mobile Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  },
+  {
+    "name": "Kwesi Baffour",
+    "sex": "Male",
+    "role": "Full-stack Engineer",
+    "required_days": 2,
+    "fixed_days": [],
+    "is_nsp": true
+  }
+]
