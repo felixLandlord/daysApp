@@ -109,3 +109,23 @@ Run the following command in the root of your project to start bundling with the
 ```bash
 dx build --platform desktop --release
 ```
+
+### Screenshots
+
+#### view employees
+![view-employees.png](assets/doc_images/view-employees.png)
+
+#### add employees
+![add-employees.png](assets/doc_images/add-employees.png)
+
+#### search employees
+![search-employees.png](assets/doc_images/search-employees.png)
+
+#### view schedule
+![view-schedule.png](assets/doc_images/view-schedule.png)
+
+#### edit schedule
+![edit-schedule.png](assets/doc_images/edit-schedule.png)
+
+#### settings
+![settings.png](assets/doc_images/settings.png)
