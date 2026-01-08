@@ -1,0 +1,9 @@
+[package]
+name = "scheduler_engine"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+scheduler_core = { path = "../scheduler_core" }
+rand.workspace = true
+thiserror.workspace = true
