@@ -1,53 +1,88 @@
-#![cfg_attr(
-    all(not(debug_assertions), target_os = "windows"),
-    windows_subsystem = "windows"
-)]
-#![cfg_attr(
-    all(not(debug_assertions), target_os = "macos"),
-    windows_subsystem = "windows"
-)]
-#![cfg_attr(feature = "bundle", windows_subsystem = "windows")]
+// use anyhow::Result;
+// use gpui::{App, *};
+// // use ui::App;
 
-mod client;
-mod server;
+// fn main() {
+//     env_logger::init();
 
-use dioxus::{logger::tracing::Level, prelude::*};
-use dioxus_desktop::{tao::window::Fullscreen, Config, WindowBuilder};
+//     Application::new().run(|cx: &mut App| {
+//         cx.open_window(
+//             WindowOptions {
+//                 window_bounds: Some(WindowBounds::Windowed(Bounds {
+//                     origin: Point::new(Pixels(100.0), Pixels(100.0)),
+//                     size: Size {
+//                         width: Pixels(1200.0),
+//                         height: Pixels(800.0),
+//                     },
+//                 })),
+//                 titlebar: Some(TitlebarOptions {
+//                     title: Some("Office Scheduler".into()),
+//                     appears_transparent: false,
+//                     traffic_light_position: None,
+//                 }),
+//                 window_min_size: Some(Size {
+//                     width: Pixels(800.0),
+//                     height: Pixels(600.0),
+//                 }),
+//                 ..Default::default()
+//             },
+//             |cx| cx.new_view(|cx| ui::App::new(cx)),
+//         );
+//     });
+// }
+use gpui::*;
 
-use crate::client::app::App;
-use crate::server::db::{create_employee_table, create_schedules_table, establish_connection};
+actions!(
+    scheduler,
+    [
+        Quit,
+        Save,
+        Undo,
+        Redo,
+        Delete,
+        SwitchToEmployees,
+        SwitchToSchedules,
+        SwitchToSettings,
+        NewEmployee,
+        GenerateSchedule,
+        ExportSchedule,
+    ]
+);
 
 fn main() {
-    dioxus::logger::init(Level::INFO).expect("failed to init logger");
+    env_logger::init();
 
-    let window = WindowBuilder::new()
-        .with_title("days-assign")
-        .with_always_on_top(false)
-        // .with_fullscreen(Some(Fullscreen::Borderless(None)));
-        // .with_maximized(true);
-        .with_inner_size(dioxus_desktop::tao::dpi::LogicalSize::new(1200, 800));
+    Application::new().run(|cx: &mut App| {
+        cx.bind_keys([
+            KeyBinding::new("cmd-q", Quit, None),
+            KeyBinding::new("cmd-s", Save, None),
+            KeyBinding::new("cmd-z", Undo, None),
+            KeyBinding::new("cmd-shift-z", Redo, None),
+            KeyBinding::new("cmd-backspace", Delete, None),
+            KeyBinding::new("cmd-1", SwitchToEmployees, None),
+            KeyBinding::new("cmd-2", SwitchToSchedules, None),
+            KeyBinding::new("cmd-3", SwitchToSettings, None),
+            KeyBinding::new("cmd-n", NewEmployee, None),
+        ]);
 
-    let config = Config::new()
-        .with_window(window)
-        .with_resource_directory("Contents/Resources/assets");
+        cx.activate(true);
 
-    // Initialize the database connection and tables
-    match establish_connection() {
-        Ok(conn) => {
-            if let Err(e) = create_employee_table(&conn) {
-                eprintln!("Failed to create employee table: {}", e);
-                // Handle the error appropriately (e.g., exit the application)
-            }
-            if let Err(e) = create_schedules_table(&conn) {
-                eprintln!("Failed to create schedules table: {}", e);
-                // Handle the error appropriately (e.g., exit the application)
-            }
-        }
-        Err(e) => {
-            eprintln!("Failed to connect to database: {}", e);
-            // Handle the error (e.g., exit the application)
-        }
-    }
-
-    LaunchBuilder::desktop().with_cfg(config).launch(App);
+        cx.open_window(
+            WindowOptions {
+                window_bounds: Some(WindowBounds::Windowed(Bounds {
+                    origin: point(px(100.0), px(100.0)),
+                    size: size(px(1200.0), px(800.0)),
+                })),
+                titlebar: Some(TitlebarOptions {
+                    title: Some("Office Scheduler".into()),
+                    appears_transparent: false,
+                    traffic_light_position: None,
+                }),
+                window_min_size: Some(size(px(800.0), px(600.0))),
+                ..Default::default()
+            },
+            |_, cx| cx.new(|cx| ui::AppView::new(cx)),
+        )
+        .unwrap();
+    });
 }
